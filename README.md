@@ -1,16 +1,73 @@
-# React + Vite
+# LIVE DEMO:
+https://data-grid-with-filtering-pagination.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Data Grid App
 
-Currently, two official plugins are available:
+A simple and clean **React Data Grid** application that fetches live API data and displays it with sorting, search, and pagination using `react-table`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> Built using `react-table`, Tailwind CSS and the JSONPlaceholder API.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+✅ Fetches live data from API (JSONPlaceholder)
+✅ Global search filter
+✅ Column sorting
+✅ Pagination support
+✅ Smooth UI with Tailwind CSS
+✅ Loading state UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Tech                | Description                                    |
+| ------------------- | ---------------------------------------------- |
+| React               | UI Framework                                   |
+| react-table         | Table utilities (sorting, pagination, filters) |
+| Tailwind CSS        | Styling framework                              |
+| JSONPlaceholder API | Dummy live API                                 |
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├─ App.jsx   # DataGrid component logic fileciteturn2file0
+ └─ main.jsx  # Entry file
+```
+
+---
+
+## 📥 Installation
+
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+npm install
+```
+
+---
+
+## ▶️ Run Project
+
+```bash
+npm run dev
+```
+
+Then open **[http://localhost:3000](http://localhost:3000)** in your browser.
+
+---
+
+## 🧠 How It Works
+
+* Fetches comments data from:
+
+  ```
+  https://jsonplaceholder.typicode.com/comments
+  ```
+* Uses `useTable`, `useSortBy`, `usePagination`, and `useGlobalFilter` for table functions.
+* Real-time search filters all rows.
+* Sortable headers (`ID`, `Name`, `Email`, `Body`).
+
+Feel free to connect and collaborate!
